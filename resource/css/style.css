@@ -1,0 +1,576 @@
+/* 
+colour  #e7075bff
+*/
+
+/*-----------------------------------------------------*/
+/* BASIC SETUP */
+/*-----------------------------------------------------*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background: #ffffff;
+    color: #555555;
+    font-family: 'Lato', 'Arial', 'san-serif';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*-----------------------------------------------------*/
+/* REUSEABLE COMPONENTS*/
+/*-----------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0px;
+    height: auto;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*---------HEADINGS--------*/
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #e7075bff;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*---------PARAGRAPH--------*/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    margin-bottom: 20px;
+}
+
+
+/*---------link--------*/
+a:link,
+a:visited {
+    color: #e7075bff;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e7075bff;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #e7075bff;
+    border-bottom: 1px solid transparent;
+}
+
+
+/*---------BUTTONS--------*/
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited, 
+input[type=submit]{
+    background-color: #e7075bff;
+    border: 1px solid #e7075bff;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e7075bff;
+    color: #e7075bff;
+}
+
+.btn:hover,
+.btn:active, 
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #c3064dff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #c3064dff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #c3064dff;
+    color: #ffffff;
+}
+
+
+/*-----------------------------------------------------*/
+/*HEADER*/
+/*-----------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(#00000070, #00000070), url(img/foodiesfeed.com_messy-pizza-on-a-black-table.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 75px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    clear: right;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border-button 0.2s;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e7075bff;
+}
+
+/*------feathures-----*/
+.section-features ion-icon {
+    color: #e7075bff;
+    font-size: 64px;
+    display: block;
+    margin-bottom: 10px;
+}
+.section-features{
+    height: 700px;
+}
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+/*------Meals-----*/
+.section-meals {
+    padding-bottom: 0px;
+    height: 600px;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: right;
+    width: 25%;
+}
+
+.meal-photos {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photos img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photos img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+
+}
+
+/*------HOW IT WORKS-----*/
+.section-step {
+    margin-top: 90px; 
+    background-color: #f4f4f4;
+    height: 720px;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 0px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 0px;
+
+}
+
+.app-screen {
+    width: 40%;
+
+}
+
+.work-step {
+    margin-bottom: 50px;
+}
+
+.work-step div {
+    color: #e7075bff;
+    border: 1px solid #e7075bff;
+    display: block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    margin-right: 5%;
+    float: left;
+}
+
+.work-step p {
+    margin: 10%;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50%;
+    width: 40%;
+    margin-right: 10px;
+}
+
+
+/*------cities-----*/
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.section-city .city-feature ion-icon {
+    display: block;
+    width: 30%;
+    text-align: center;
+    color: #e7075bff;
+    float: left;
+    padding-top: 5px;
+    padding-right: 0px;
+}
+
+.section-city {
+    height: 700px;
+}
+
+/*---testimonial----*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/3.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    height: 700px;
+
+}
+
+blockquote {
+    margin-top: 100px;
+    font-style: italic;
+    line-height: 145%;
+    font-size: 20px;
+    padding: 0 20px;
+    position: relative;
+    text-align: justify;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+
+cite img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+/*---plan----*/
+.section-plans {
+    background-color: #f4f4f4;
+    height: 700px;
+}
+
+.section-plans ion-icon{
+    color: #e7075bff;
+}
+
+.plan-box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-left: 45%;
+    width: 100%;
+    box-shadow: 0 2px 2px #efefef;
+
+}
+
+.plan-box div {
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e7075bff;
+    text-align: left;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+    color: #e7075bff;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-box ion-icon {
+    padding-right: 11px;
+    margin: 0;
+    float: left;
+}
+
+.plan-box ul li {
+    text-align: left;
+    padding: 5px 0;
+}
+
+/*------form-----*/
+
+.contact-form{
+    height: 500px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type = text],
+input[type = email],
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{outline: none}
+
+/*--------footer--------*/
+footer{
+    background-color:#333;
+    height: 100%;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0; 
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+footer .social-links li a:link,
+footer .social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: colour 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+footer ion-icon[name=logo-twitter],
+footer ion-icon[name=logo-facebook],
+footer ion-icon[name=logo-googleplus],
+footer ion-icon[name=logo-instagram]{
+    transition: color 0.2s;
+}
+
+
+
+footer ion-icon[name=logo-twitter]:hover{
+    color: #00aced;
+}
+
+footer ion-icon[name=logo-facebook]:hover{
+    color: #3b5998;
+}
+
+footer ion-icon[name=logo-googleplus]:hover{
+    color: #dd4b49;
+}
+
+footer ion-icon[name=logo-instagram]:hover{
+    color: #517fa4;
+}
+
+footer .row p{
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}

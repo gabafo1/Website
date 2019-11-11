@@ -1,0 +1,150 @@
+
+/*---from big tablet to 1023px---*/
+@media only screen and (max-width:1200px){
+    .hero-text-box {
+        position: absolute;
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row{padding: 0 2%;}
+}
+
+/*---from small tablet to big tablet tablet 768px-1023px--*/
+@media only screen and (max-width:1023px){
+    body{font-size: 75%}
+
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .steps-box{margin-top: 10px;}
+    .work-step {margin-bottom: 40px; }
+
+    .section-plans{
+        padding: 0;
+        padding-top: 10%;
+    }
+
+    .plan-box {
+        margin: 0px;
+    }
+    .section-step{margin-top:0;}
+    .app-screen {width: 50%;}
+    .section-city .city-feature ion-icon{width: 20%;}
+    .section-city{font-size: 90%}
+}
+
+/*---from small phone to small tablet 481px-767px--*/
+@media only screen and (max-width:767px){
+    body{font-size: 13px;}
+    section{padding: 30px 0;}
+
+    .logo{
+        margin: 20px;
+        margin-left: 145px;
+    }
+
+
+    .col{width: 100%;}
+
+
+    .main-nav{
+        text-align: center;
+        width: 400px;
+        margin:40px 40px;
+    }
+    
+    
+    h2{font-size: 150%;}
+
+    .long-copy{
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+    }
+
+    .section-features ion-icon {
+        font-size: 64px;
+        display: block;
+        margin-left: 44%;
+    }
+
+    .section-features h3 {
+        max-resolution: left 3px;
+        text-align: center;
+    }
+
+    .steps-box:first-child{
+        text-align: center;
+    }
+
+    .app-screen {
+        width: 25%;
+    
+    }
+ 
+
+     .section-city img{
+        width: 80%;
+        height: auto;
+    }
+     
+    .section-city .col.span_1_of_4 {
+        width: 23.7%;
+    }
+
+    .section-city .city-feature a{
+        font-size: 11px;
+    }
+
+    .section-city .city-feature ion-icon{
+        padding: 0px;
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    .section-city{
+        height: 500px;
+    }
+    
+    blockquote {
+        font-size: 15px;
+        margin: 30px auto;
+        padding: 2px auto;
+    }
+
+    cite img {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+    }
+    cite {
+        font-size: 50%;
+        margin-top: 10px;
+    }
+
+    .section-plans{
+        height: 1200px;
+    }
+    .social-links{
+        margin-right: 110px;
+    }
+
+    .footer-nav{
+        margin-left: 50px;
+    }
+    nav label{
+        display: block;
+        cursor: pointer;
+    }
+    .main-nav{
+        text-align: center;
+        width: 100%
+    }
+}
+/*---for small phones 0-480px--*/
+@media only screen and (max-width:480px){
+
+}
