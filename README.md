@@ -1,14 +1,6 @@
-# My Project
+99aabacff1c1.1bf27410.alx-cod.online
 
-Welcome to my project! This is a simple demonstration of using Git and Markdown.
+99aabacff1c1
 
-## Introduction
-
-This project showcases the basic steps involved in setting up a Git repository and creating a Markdown file.
-
-Feel free to explore the code and documentation.
-
-## Getting Started
-
-To get started, follow the instructions below...
+98a51588d35815a367b2
 
